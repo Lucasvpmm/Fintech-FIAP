@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 70px; /* Adjusting for header */
+}
+
+.card {
+    background: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 20px;
+    width: 65%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-service {
+    margin-top: 20px;
+}
+
+.btn-service {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-add-service {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.footer-buttons {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    z-index: 3;
+    text-align: center;
+}
+
+.btn-back, .btn-suggestion {
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
